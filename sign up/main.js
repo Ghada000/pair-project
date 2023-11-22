@@ -40,5 +40,6 @@ function validateLogin() {
       errorMessage.innerHTML = 'Invalid username or password.';
     }
   }
+ 
 
 
