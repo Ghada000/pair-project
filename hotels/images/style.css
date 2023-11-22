@@ -1,0 +1,36 @@
+#searchInput {
+    width: 300px;
+    height: 40px; 
+    font-size: 16px; 
+    margin-left: 35%;
+  }
+ body{
+  
+    background-image: url("https://plus.unsplash.com/premium_photo-1667587245819-2bea7a93e7a1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA=");
+    
+    background-size: 100%;
+    background-attachment: fixed;
+
+ }
+ #itemList{
+    margin-left: 30%;
+ }
+ #theltha{
+    margin-left: 3%;
+ }
+ #tes3a{
+    margin-left: 3%;
+    transition: transform 0.3s;
+    
+
+ }
+ #jj{
+    margin-left: 4%;
+ }
+ #tes3a:hover{
+    transform: scale(1.1);
+ }
+   
+    
+
+ 
