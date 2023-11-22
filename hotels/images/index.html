@@ -48,6 +48,48 @@
     
   </ul>
 
+  
+<h2>Choose Payment Method</h2>
+<label>
+    <input type="radio" name="paymentMethod" value="card" id="cardRadio" checked> Credit Card
+</label>
+<label>
+    <input type="radio" name="paymentMethod" value="paypal" id="paypalRadio"> PayPal
+</label>
+
+<div id="cardSection">
+    <h3>Card Information</h3>
+    <form id="cardForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" required><br>
+
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" required><br>
+
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" required><br>
+
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" required><br>
+        
+        <label for="Expiry Date:">Expiry Date:</label>
+        <input type="text" id="Expiry Date:" required><br>
+
+        <button type="button" onclick="processCardPayment()">Submit</button>
+    </form>
+</div>
+
+<div id="paypalSection" style="display: none;">
+    <h3>PayPal Information</h3>
+    <form id="paypalForm">
+        <label for="paypalEmail">PayPal Email:</label>
+        <input type="text" id="paypalEmail" required><br>
+
+        <button type="button" onclick="processPayPalPayment()">Submit</button>
+    </form>
+</div>
+
+<div id="paymentMessage"></div>
 
   
 

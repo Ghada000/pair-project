@@ -74,6 +74,35 @@
 </section>
 
 
+<form id="paymentForm">
+  <label for="paymentMethod">Select Payment Method:</label>
+  <select id="paymentMethod" onchange="togglePaymentFields()">
+      <option value="card">Credit Card</option>
+      <option value="paypal">PayPal</option>
+  </select>
+
+  <!-- Credit Card Fields -->
+  <div id="creditCardFields">
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" placeholder="Card Number" maxlength="16" required>
+
+      <label for="expiryDate">Expiry Date:</label>
+      <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5" required>
+
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" placeholder="CVV" maxlength="3" required>
+
+      <label for="amount required">amount required</label>
+  <input type="text" id="amount" placeholder="enter the amount" maxlength="10" required>
+  </div>
+
+  <!-- PayPal Fields (you can customize this based on PayPal integration) -->
+  <div id="paypalFields" style="display: none;">
+      <p>Enter your PayPal information...</p>
+  </div>
+
+  <button type="button" onclick="processPayment()">Submit Payment</button>
+</form>
 
     <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
