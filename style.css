@@ -1,7 +1,10 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: black;
+    background-color: rgb(3, 3, 84);
     overflow: hidden;
+    height: 10%;
+    
+    
   }
   
   /* Style the links inside the navigation bar */
@@ -9,97 +12,78 @@
     float: right;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 10px;
    text-decoration: black;
     font-size: 50px;
+    
+    margin-right: 2%;
+    
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
     background-color: #ddd;
-    color: black;
+    color: rgb(3, 3, 34);
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color:black;
+    background-color : rgb(3, 3, 34);
     color: white;
   }
 
   #LOGO{
-    height : 100px;
-    width:100px
+    height : 70px;
+    width:500px;
+    margin-left: 3%;
+    
   }
 #BODY{
     background-repeat: no-repeat;
     background-size: 100%;
+    align-items: flex-end;
 }
-* {box-sizing: border-box}
-
-/* Full-width input fields */
-  input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
+* {margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+transition: .2s linear;
 }
 
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
 }
 
-/* Set a style for all buttons */
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
+
+
+#section2{
+  background-image: url("https://www.avygeo.fr/Avygeo/uploads/3245/albums/img5_5c9be21ed5390.jpg") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:130vh ;
+  
+}
+#section3{
+  background-image: url("https://a.cdn-hotels.com/gdcs/production175/d754/d756ebcf-98f2-4434-995f-ed439e38d9d2.jpg");
+  
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-button:hover {
-  opacity:1;
-}
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
-}
   
