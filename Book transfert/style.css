@@ -19,3 +19,114 @@ h1{
     text-align: center;
     
 }
+
+body {
+    background-color: #f8f8f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-decoration: underline;
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(68, 66, 129);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(18, 18, 79);
+}
+
+.google-map {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+#result {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#result p {
+    margin: 10px 0;
+    color: #333;
+}
+.google-map{
+    height: 10%;
+    margin-right: 35%;
+}
+body{
+    background-image: url(/logo/png/map\ bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+}
+h1 {
+    background-color: #001f3f; /* Dark Blue */
+    color: #ffffff; /* White text */
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Add a subtle box shadow for depth */
+h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #003366; /* Slightly lighter blue */
+    margin-top: 10px;
+    border-radius: 5px;
+}
