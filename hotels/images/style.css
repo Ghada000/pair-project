@@ -15,7 +15,7 @@
  #itemList{
     margin-left: 30%;
  }
- #theltha{
+ #jomla3{
     margin-left: 3%;
  }
  #tes3a{
@@ -24,13 +24,70 @@
     
 
  }
- #jj{
-    margin-left: 4%;
- }
+
  #tes3a:hover{
     transform: scale(1.1);
  }
-   
-    
+   #loula:hover{
+      transform: scale(1.1)
+   }
+    #thenia:hover{
+      transform: scale(1.1)
+    }
+    #theltha:hover{
+      transform: scale(1.1)
+    }
+    #arb3a:hover{
+      transform: scale(1.1)
+    }
+    #khamsa:hover{
+      transform: scale(1.1)
+    }
+    #setta:hover{
+      transform: scale(1.1)
+    }
+    #sab3a:hover{
+      transform: scale(1.1)
+    }
+    #thmanya:hover{
+      transform: scale(1.1)
+    }
+   #theltha{
+      margin-left: 4%;
+   }
+   #paymentmethod{
+      font-family: Arial, Helvetica, sans-serif;
+   }
 
- 
+   <style>
+    /* Add a bit of spacing and styling to the form */
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px; /* Adjust the maximum width as needed */
+        margin: auto; /* Center the form */
+    }
+
+    label {
+        margin-bottom: 8px;
+    }
+
+    input {
+        padding: 8px;
+        margin-bottom: 16px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: rgb(55, 5, 13);
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: palevioletred;
+    }
+</style>
+

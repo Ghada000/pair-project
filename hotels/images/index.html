@@ -13,45 +13,45 @@
   <ul id="itemList">
     <li><figure>
         <img id="loula" src="/airbnb/images/1.avif" alt="Description of Image 1" style="height: 250px; width: 450px;">
-        <figcaption><h2>Appartement in beyoglou <br>Price : 40$ per night </h2></figcaption>
+        <figcaption><h2>Appartement in beyoglou <br>Price : 40$ per night , code :20</h2></figcaption>
       </figure></li>
     <li><figure>
         <img id="thenia" src="/airbnb/images/2.avif.webp" alt="The best View in taksim" style="height: 250px; width: 450px;" >
-        <figcaption><h2>Appartement in taksim <br>price:35$ per night </h2></figcaption>
+        <figcaption><h2>Appartement in taksim <br>price:35$ per night, code :21 </h2></figcaption>
       </figure></li>
     <li><img id="theltha" src="/airbnb/images/3.avif.webp" alt="Description of Image 1" style="height: 250px; width: 450px;" >
-        <figcaption><h2>Appartement in istiklal street<br>price:30$ per night</h2></figcaption>
+        <figcaption><h2 id="jomla3">Appartement in istiklal street<br>price:30$ per night, code :22</h2></figcaption>
       </figure></li>
     <li> <figure>
         <img id="arb3a" src="/airbnb/images/4.avif" alt="Description of Image 2" style="height: 250px; width: 450px;" >
-        <figcaption><h2>Appartement in Fatih <br>price : 36$ per night</h2></figcaption>
+        <figcaption><h2>Appartement in Fatih <br>price : 36$ per night ,  code :23 </h2></figcaption>
       </figure></li>
     <li><figure>
         <img id="khamsa" src="/airbnb/images/5.avif.jpg" alt="Description of Image 2" style="height: 250px; width: 450px;">
-        <figcaption><h2>Appartement in Ortakoy <br> price : 45$</h2></figcaption>
+        <figcaption><h2>Appartement in Ortakoy <br> price : 45$ , code :24</h2></figcaption>
       </figure></li>
     <li> <figure>
-        <img id="6" src="/airbnb/images/6.avif" alt="Description of Image 1" style="height: 250px; width: 450px;">
-        <figcaption><h2>Appartement in istiklal street<br>price:30$ per night</h2></figcaption>
+        <img id="setta" src="/airbnb/images/6.avif" alt="Description of Image 1" style="height: 250px; width: 450px;">
+        <figcaption><h2>Appartement in istiklal street<br>price:30$ per night, code :25</h2></figcaption>
       </figure></li>
     <li> <figure>
-        <img id="7" src="/airbnb/images/7.avif.jpg" alt="Description of Image 2" style="height: 250px; width: 450px;">
-        <figcaption><h2>Appartement in Fatih <br>price : 36$ per night</h2></figcaption>
+        <img id="sab3a" src="/airbnb/images/7.avif.jpg" alt="Description of Image 2" style="height: 250px; width: 450px;">
+        <figcaption><h2>Appartement in Fatih <br>price : 36$ per night, code :26</h2></figcaption>
       </figure></li>
     <li><figure>
-        <img id="8" src="/airbnb/images/8.avif.jpg" alt="Description of Image 2" style="height: 250px; width: 450px;">
-        <figcaption><h2></h2></figcaption>
+        <img id="thmanya" src="/airbnb/images/8.avif.jpg" alt="Description of Image 2" style="height: 250px; width: 450px;">
+        <figcaption><h2>Appartement in Fatih <br>price : 36$ per night, code :27</h2></figcaption>
       </figure></li>
     <li> <img id="tes3a" src="/airbnb/images/9.avif.jpg" alt="Description of Image 2" style="height: 250px; width: 450px;">
-        <figcaption><h2>Appartement in Fatih <br>price : 36$ per night </h2></figcaption>
+        <figcaption><h2>Appartement in Fatih <br>price : 36$ per night , code :28 </h2></figcaption>
       </figure></li>
     
   </ul>
 
   
-<h2>Choose Payment Method</h2>
+<h1 id="paymentmethod">*Choose Payment Method :</h1>
 <label>
-    <input type="radio" name="paymentMethod" value="card" id="cardRadio" checked> Credit Card
+    <input  type="radio" name="paymentMethod" value="card" id="cardRadio" checked> Credit Card
 </label>
 <label>
     <input type="radio" name="paymentMethod" value="paypal" id="paypalRadio"> PayPal
@@ -60,7 +60,7 @@
 <div id="cardSection">
     <h3>Card Information</h3>
     <form id="cardForm">
-        <label for="fullName">Full Name:</label>
+        <label for="fullName">Full name:</label>
         <input type="text" id="fullName" required><br>
 
         <label for="cardNumber">Card Number:</label>
@@ -74,8 +74,13 @@
         
         <label for="Expiry Date:">Expiry Date:</label>
         <input type="text" id="Expiry Date:" required><br>
+        <label for="HouseCode">Appartement code :</label>
+        <input type="text" id="code" required><br>
 
-        <button type="button" onclick="processCardPayment()">Submit</button>
+        <label for="NumberOfNights">Number of nights :</label>
+        <input type="text" id="number" required><br>
+
+        <button type="button" id="submit" onclick="processCardPayment()">Submit</button>
     </form>
 </div>
 
@@ -84,6 +89,10 @@
     <form id="paypalForm">
         <label for="paypalEmail">PayPal Email:</label>
         <input type="text" id="paypalEmail" required><br>
+        <label for="HouseCode">Appartement code :</label>
+        <input type="text" id="code" required><br>
+        <label for="NumberOfNights">Number of nights :</label>
+        <input type="text" id="number" required><br>
 
         <button type="button" onclick="processPayPalPayment()">Submit</button>
     </form>
