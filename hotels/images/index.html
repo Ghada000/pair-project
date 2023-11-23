@@ -108,3 +108,210 @@
     <script src="main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: #fff; /* Set a default background color */
+        }
+
+        #itemList {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        #itemList li {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        #itemList figure {
+            margin: 0;
+        }
+
+        #itemList img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #itemList figcaption {
+            padding: 20px;
+            text-align: left;
+        }
+
+
+        #paymentmethod {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        label {
+            margin: 10px;
+        }
+
+        #cardSection,
+        #paypalSection {
+            margin: 20px;
+        }
+
+        #cardForm,
+        #paypalForm {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #submit {
+            margin-top: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        #paymentMessage {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <input type="text" class="searchInput" placeholder="Search with price or place">
+  
+    <ul id="itemList">
+      <li>
+        <figure>
+            <img id="arb3a" src="/airbnb/images/4.avif" alt="Description of Image 2">
+            <figcaption><h2>Appartement in Fatih <br>price : 36$ per night , code :23 </h2></figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+            <img id="khamsa" src="/airbnb/images/5.avif.jpg" alt="Description of Image 2">
+            <figcaption><h2>Appartement in Ortakoy <br> price : 45$ , code :24</h2></figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+            <img id="setta" src="/airbnb/images/6.avif" alt="Description of Image 1">
+            <figcaption><h2>Appartement in istiklal street<br>price:30$ per night, code :25</h2></figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+            <img id="sab3a" src="/airbnb/images/7.avif.jpg" alt="Description of Image 2">
+            <figcaption><h2>Appartement in Fatih <br>price : 36$ per night, code :26</h2></figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+            <img id="thmanya" src="/airbnb/images/8.avif.jpg" alt="Description of Image 2">
+            <figcaption><h2>Appartement in Fatih <br>price : 36$ per night, code :27</h2></figcaption>
+        </figure>
+    </li>
+    <li>
+        <figure>
+            <img id="tes3a" src="/airbnb/images/9.avif.jpg" alt="Description of Image 2">
+            <figcaption><h2>Appartement in Fatih <br>price : 36$ per night , code :28 </h2></figcaption>
+        </figure>
+    </li>
+    
+    </ul>
+
+    <h1 id="paymentmethod">*Choose Payment Method :</h1>
+    <label>
+        <input  type="radio" name="paymentMethod" value="card" id="cardRadio" checked> Credit Card
+    </label>
+    <label>
+        <input type="radio" name="paymentMethod" value="paypal" id="paypalRadio"> PayPal
+    </label>
+
+    <div id="cardSection">
+        <h3>Card Information</h3>
+        <form id="cardForm">
+            <label for="fullName">Full name:</label>
+            <input type="text" id="fullName" required><br>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" required><br>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" required><br>
+
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" required><br>
+            
+            <label for="Expiry Date:">Expiry Date:</label>
+            <input type="text" id="Expiry Date:" required><br>
+            <label for="HouseCode">Appartement code :</label>
+            <input type="text" id="code" required><br>
+
+            <label for="NumberOfNights">Number of nights :</label>
+            <input type="text" id="number" required><br>
+
+            <button type="button" id="submit" onclick="processCardPayment()">Submit</button>
+        </form>
+    </div>
+
+    <div id="paypalSection" style="display: none;">
+        <h3>PayPal Information</h3>
+        <form id="paypalForm">
+            <label for="paypalEmail">PayPal Email:</label>
+            <input type="text" id="paypalEmail" required><br>
+            <label for="HouseCode">Appartement code :</label>
+            <input type="text" id="code" required><br>
+            <label for="NumberOfNights">Number of nights :</label>
+            <input type="text" id="number" required><br>
+
+            <button type="button" onclick="processPayPalPayment()">Submit</button>
+        </form>
+    </div>
+
+    <div id="paymentMessage"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html> -->
