@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,19 +7,29 @@
     
 </head>
 <body>
-    
-
     <h1>SELECT YOUR DESTINATION</h1>
+    
+    <!-- Form for selecting current location and destination -->
+    <form id="locationForm">
+        <label for="currentLocation"><H2>Current Location:</H2></label>
+        <input type="text" id="currentLocation" placeholder="Enter current location" required>
+        
+        <label for="destination"><H2>Destination:</H2></label>
+        <input type="text" id="destination" placeholder="Enter destination" required>
+        
+        <button type="button" onclick="calculateDistanceAndPrice()">Calculate</button>
+    </form>
+    
+    <!-- Map with default iframe -->
     <div class="google-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d348763.85566084424!2d29.0121795!3d41.0053215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2sIstanbul%2C%20Turquie!5e1!3m2!1sfr!2stn!4v1700725058742!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe id="mapIframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d348763.85566084424!2d29.0121795!3d41.0053215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa7040068086b%3A0xe1ccfe98bc01b0d0!2sIstanbul%2C%20Turquie!5e1!3m2!1sfr!2stn!4v1700725058742!5m2!1sfr!2stn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <!-- Add these links in the head section of your HTML -->
-
-
-
-
-
-
+    
+    <!-- Display distance and price -->
+    <div id="result">
+        <p id="distance"><H2>Distance:</H2> </p>
+        <p id="price"><H2>Price:</H2> </p>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="main.js"></script>
