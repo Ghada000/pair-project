@@ -130,3 +130,7 @@ h1::after {
     margin-top: 10px;
     border-radius: 5px;
 }
+.google-map{
+    height: 10%;
+    margin-right: 40%;
+}
