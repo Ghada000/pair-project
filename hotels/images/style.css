@@ -5,8 +5,8 @@
     margin-left: 35%;
   }
  body{
-  
-    background-image: url("https://plus.unsplash.com/premium_photo-1667587245819-2bea7a93e7a1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA=");
+      background-image: url("/airbnb/images/airbnb\ background.jpg");
+
     
     background-size: 100%;
     background-attachment: fixed;
@@ -91,3 +91,16 @@
     }
 </style>
 
+#loula{
+   position: relative;
+   width: 300px; /* Adjust width as needed */
+   height: 200px; /* Adjust height as needed */
+   overflow: hidden;
+ }
+ 
+ #loula {
+   width: 100%;
+   height: auto; /* To maintain the image's aspect ratio */
+   border-radius: 5px; /* Adjust border radius as needed */
+   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+ }

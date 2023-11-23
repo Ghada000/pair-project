@@ -17,4 +17,3 @@ function processPayment() {
         console.log('Processing payment with PayPal...');
     }
 }
-</script>
