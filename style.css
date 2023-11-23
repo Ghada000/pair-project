@@ -124,28 +124,7 @@ section{
 #btn2:hover {
   background-color: #2980b9;
 }
-#video {
-  /* position: fixed; */
-  /* top: 0;
-  left: 0; */
-  height:  130px;
-  height: 414vh;
-  z-index: -1;
- 
-   /* overflow: hidden;  */
-}
 
-#background-video {
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* min-width: 100%;
-  min-height: 100%; */
-  /* width: 300%;
-  height: 100%; */
-  /* z-index: -1; */
-}
 
   
  #btn1 {
@@ -253,4 +232,8 @@ section{
   content: '\2022'; /* Unicode character for a bullet point */
   margin-right: 10px;
   font-size: 28px;
+}
+#section4{
+  background-image: url(https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRzy-oRZDHAngUPM01IFXv9v-Z6RLBHxFPFb7eieHNvDBlSm4fq624OvWM-fvZTZ9DYK9_oowm87X_0N0Ha84iEeqIC5zgiy8xdvHuOyQ);
+  background-size: 100%;
 }
